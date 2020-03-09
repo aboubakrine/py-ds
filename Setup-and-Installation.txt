@@ -1,0 +1,32 @@
+- Anaconda.com
+Downlaod: https://www.anaconda.com/distribution/
+
+* During install check both boxes in Advanced options on Windows
+* Use Anaconda Navigator --> Jupyter notebook
+or
+* cmd --> jupyterter notebook
+
+- Conda Environment
+Link: https://conda.io/projects/conda/en/latest/user-guide/concepts/environments.html
+
+- create an environment
+conda create --name myenv
+conda create -n myenv python=3.6	--- create an environment with a specific version of Python
+conda create -n myenv scipy			--- create an environment with a specific package
+OR
+conda create -n myenv python
+conda install -n myenv scipy
+conda create -n myenv scipy=0.15.0	--- create an environment with a specific version of a packag
+OR
+conda create -n myenv python
+conda install -n myenv scipy=0.15.0
+conda create -n myenv python=3.6 scipy=0.15.0 astroid babel	--- create an environment with a specific version of Python and multiple package
+
+conda create --help					--- GET help
+cd project-directory
+conda activate ./env
+-->(env) project-directory $
+conda info --envs					--- determine current environment
+conda env list
+
+
